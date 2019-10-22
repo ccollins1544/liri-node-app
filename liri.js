@@ -22,7 +22,7 @@
  *   2.6 Movie_Plot
  *   2.7 cb_Movie 
  *   2.8 DoWhatItSays
- *   2.9 cb_DoIt 
+ *   2.9 JustDoIt 
  * 
  * A. Debugging
  *   A.1 cbError
@@ -333,16 +333,16 @@ function cb_Movie(response) {
  * node liri.js do-what-it-says
  */
 function DoWhatItSays() {
-  fs.readFile("random.txt", "utf8", cb_DoIt);
+  fs.readFile("random.txt", "utf8", JustDoIt);
   return;
 } // END DoWhatItSays
 
 /**
- * 2.9 cb_DoIt
+ * 2.9 JustDoIt
  * @param error 
  * @param data  
  */
-function cb_DoIt(error, data) {
+function JustDoIt(error, data) {
   if (error) {
     return console.log(error);
   }
@@ -354,8 +354,7 @@ function cb_DoIt(error, data) {
   console.log("Command: " + your_wish_is_my_command + ", SearchTerm: " + riddle_me_that);
   processInputs(your_wish_is_my_command, riddle_me_that);
   return;
-} // END cb_DoIt
-
+} // END JustDoIt
 
 /* ===============[ A. Debugging ]========================*/
 /**
