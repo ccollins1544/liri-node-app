@@ -246,7 +246,7 @@ function Movie_Search(movie) {
   var queryParams = {};
   queryParams.apikey = APIKEY;
 
-  if (movie === undefined || movie !== "") {
+  if (movie === undefined || movie === "") {
     movie = "Mr. Nobody";
   }
 
