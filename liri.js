@@ -2,7 +2,7 @@
  * LIRI
  * @package liri
  * @author Christopher Collins
- * @version 2.0.0
+ * @version 2.0.1
  * @license none (public domain)
  * ===============[ TABLE OF CONTENTS ]===================
  * 0. Libraries
@@ -27,13 +27,6 @@
  * 
  * A. Debugging
  *   A.1 cbError
- * 
- * @todo 
- * -Maybe use inquirer for something 
- * 
- * node liri.js concert-this "Mayday Parade"
- * node liri.js spotify-this-song "You be the anchor that keeps my feet on the ground, I'll be the wings that keep your heart in the clouds"
- * node liri.js spotify-this-song "I'd hate to be you when people find out what this song is about"
  **********************************************************/
 /* ===============[ 0. Libraries ]========================*/
 // 0.1 Environments
@@ -367,16 +360,16 @@ function cb_Movie(response) {
   }
 
   if (response.data.hasOwnProperty('Search')) {
-    var nextFive = (response.data.Search.length > 5) ? 5 : response.data.Search.length;
-    console.log("NOTE: We'll only return up to " + nextFive + " results maximum.");
-    logger.info("NOTE: We'll only return up to " + nextFive + " results maximum.");
+    var nextSeven = (response.data.Search.length > 7) ? 7 : response.data.Search.length;
+    console.log("NOTE: We'll only return up to " + nextSeven + " results maximum.");
+    logger.info("NOTE: We'll only return up to " + nextSeven + " results maximum.");
 
     if (findthis !== undefined) {
       console.log("Searching for Movie: " + findthis + "\r\n");
       logger.info("Searching for Movie: " + findthis + "\r\n");
     }
 
-    for (var i = 0; i < nextFive; i++) {
+    for (var i = 0; i < nextSeven; i++) {
       var _ID = response.data.Search[i].imdbID;
       Movie_Plot(_ID, "short");
     }
