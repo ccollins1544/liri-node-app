@@ -19,7 +19,9 @@ Or if you don't want to worry about the escape character _\\_ just use *"*
 node liri.js spotify-this-song "What's My Age Again?"
 ```
 
-### Screenshots 
+### Video Demo
+![](assets/liri1-example1.mp4)
+![](assets/liri1-example2.mp4)
 
 ## Installation 
 In order to use the app you will need to download and install a few things. 
