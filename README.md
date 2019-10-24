@@ -10,23 +10,22 @@ node liri.js spotify-this-song "<song-name>"
 node liri.js movie-this "<movie-name>"
 node liri.js do-what-it-says
 ```
-**NOTE:** The *"* are not required but if you're results have a *'* you'll need to escape it like `\'`. For example if you wanted to search spotify for the song *What's My Age Again?"* then you would need to enter it like this, 
+**NOTE:** The *"* quotations are not required but if you're results have a *'* quotes you'll need to escape it like `\'`. For example if you wanted to search spotify for the song *What's My Age Again?* then you would need to enter it like this, 
 ```
 node liri.js spotify-this-song What\'s My Age Again?
 ```
-Or if you don't want to worry about the escape character _\_ just use *"* `node liri.js spotify-this-song "What's My Age Again?"`.
+Or if you don't want to worry about the escape character _\\_ just use *"* 
+```
+node liri.js spotify-this-song "What's My Age Again?"
+```
 
 ### Screenshots 
-* Clearly state the problem the app is trying to solve (i.e. what is it doing and why)
-* Give a high-level overview of how the app is organized
-* Give start-to-finish instructions on how to run the app
-* Include screenshots, gifs or videos of the app functioning
 
 ## Installation 
 In order to use the app you will need to download and install a few things. 
 1. Download and install [Git for Windows](https://gitforwindows.org/)
 2. Download and install [NodeJS](https://nodejs.org/en/download/)
-3. Download this repository by opening *Git For Windows* and running,
+3. Download this repository by opening **Git For Windows** and running,
 ```
 git clone https://github.com/ccollins1544/liri-node-app.git
 ```
