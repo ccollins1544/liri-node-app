@@ -20,8 +20,8 @@ node liri.js spotify-this-song "What's My Age Again?"
 ```
 
 ### Video Demo
-![](assets/liri1-example1.mp4)
-![](assets/liri1-example2.mp4)
+[![Liri Video - Example 1](https://img.youtube.com/vi/2K8QKWzx17A/0.jpg)](https://www.youtube.com/watch?v=2K8QKWzx17A)
+[![Liri Video - Example 2](https://img.youtube.com/vi/fKZDASUBq5U/0.jpg)](https://www.youtube.com/watch?v=fKZDASUBq5U)
 
 ## Installation 
 In order to use the app you will need to download and install a few things. 
